@@ -1,4 +1,4 @@
-$targetDir = "."
+$targetDir = $PSScriptRoot
 $apiUrl = "https://api.github.com/repos/ggml-org/llama.cpp/releases/latest"
 Write-Host "[INFO] Fetching the latest release from ggml-org API..." -ForegroundColor Cyan
 $release = Invoke-RestMethod -Uri $apiUrl
